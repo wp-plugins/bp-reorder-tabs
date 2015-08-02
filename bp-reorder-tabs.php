@@ -5,7 +5,7 @@
  * Description: Easily reorder BuddyPress Profile and Group tabs from the WordPress admin
  * Author:      BuddyBoss
  * Author URI:  http://buddyboss.com
- * Version:     1.0.0
+ * Version:     1.0.1
  */
 // Exit if accessed directly
 if (!defined('ABSPATH'))
@@ -18,7 +18,7 @@ if (!defined('ABSPATH'))
  */
 // Codebase version
 if (!defined( 'BUDDYBOSS_REORDER_TABS_PLUGIN_VERSION' ) ) {
-  define( 'BUDDYBOSS_REORDER_TABS_PLUGIN_VERSION', '1.0.0' );
+  define( 'BUDDYBOSS_REORDER_TABS_PLUGIN_VERSION', '1.0.1' );
 }
 
 // Database version
@@ -94,4 +94,10 @@ function buddypress_reorder_tabs(){
   global $BUDDYBOSS_REORDER_TABS;
 
   return $BUDDYBOSS_REORDER_TABS;
+
+/**
+ * Allow automatic updates via the WordPress dashboard
+ */
+require_once('includes/vendor/wp-updates-plugin.php');
+new WPUpdatesPluginUpdater_1228( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
 }
