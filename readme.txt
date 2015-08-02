@@ -4,7 +4,7 @@ Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
 Tested up to: 4.2.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,10 @@ Yes, BP Reorder Tabs will work with any theme. It does not output any styling on
 For BuddyPress customizations, submit your request at [BuddyBoss](http://www.buddyboss.com/buddypress-developers/).
 
 == Changelog ==
+
+= 1.0.2 =
+
+* Fixed WP-Updates
 
 = 1.0.1 =
 
